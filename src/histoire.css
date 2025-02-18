@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'CaligraphyCustom'; /*a name to be used later*/
+  src: url('../fonts/KingsguardCalligraphy_PERSONAL_USE_ONLY.otf'); /*URL to font*/
+}
+@font-face {
+  font-family: 'TextCustom'; /*a name to be used later*/
+  src: url('../fonts/Cursive\ standard.ttf'); /*URL to font*/
+}
+
+:root {
+    color-scheme: only light !important;
+}
+
+@layer {
+    html {
+        color-scheme: only light !important;
+    }
+}
+
+html {
+    background: rgb(235, 218, 200);
+}
+
+input {
+    /* background: transparent; */
+    background: rgb(207, 207, 206, 0.5);
+    border: none;
+    font-family: monospace;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 20px;
+}
+
+body {
+    color: black;
+}
+
+#zone-txt {
+    /* display: flex; */
+    border: 3px solid rgb(168, 161, 128);
+    border-radius:  10px;
+    margin: auto;
+    width: 70%;
+    height: 80%;
+    background: rgb(192, 183, 145);
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+#title {
+    text-align: center;
+    margin: auto;
+    font-family: 'CaligraphyCustom';
+    font-weight: bolder;
+    font-size: 50px;
+    
+}
+
+#page-redac{
+    background-image: url('../img/page.jpg');
+    background-repeat: repeat-y;
+    background-size: 100% 210%;
+}
+
+#redac {
+    min-height: 500px;
+    max-height: 500px;
+    overflow-y: scroll;
+    margin-left: 5%;
+    padding-top: 10px;
+    
+}
+
+#zone-words {
+    width: 85%;
+    margin: auto;
+    overflow-y: scroll;
+    padding-top: 10px;
+}
+
+span {
+    color: rgb(71, 83, 71);
+    font-weight: bold;
+    font-size: large;
+    padding: 2px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    font-family: 'TextCustom';
+    font-size: 25px;
+}
+span:hover {
+    background: rgb(144, 238, 144, 0.8);
+    color: olivedrab;
+    cursor: crosshair;
+}
+
+input{
+  color: rgb(71, 83, 71);
+  font-weight: 600;
+  font-size: large;
+}
+
+
+.txt-heighlight{
+  background: lightgreen;
+  color: olivedrab;
+  cursor: crosshair;
+}
+
+
+button{
+    margin: 5px;
+}
+
+.btn-heighlight{
+  margin-top: 10px;
+  margin-bottom: -10px;
+  bottom: 10px;
+  border: 10px solid rgb(25, 107, 80) !important;
+    /* border-color: rgb(196, 201, 36); */
+}
+
+.is-disabled {
+    background-color: hsl(268, 100%, 82%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
